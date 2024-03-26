@@ -1,15 +1,15 @@
 import React from "react";
 import CartIcon from "../Cart/CartIcon";
-import  "./HeaderCartButton.css";
+import styles from "./HeaderCartButton.module.css";
 function HeaderCartButton() {
   return (
     <>
-      <button className="button">
-        <span className="icon">
+      <button className={styles["button"]}>
+        <span className={styles["icon"]}>
           <CartIcon />
         </span>
         <span>Your Cart</span>
-        <span className="badge">3</span>
+        <span className={styles["badge"]}>3</span>
       </button>
     </>
   );
