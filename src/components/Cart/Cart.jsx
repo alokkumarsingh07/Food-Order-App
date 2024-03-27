@@ -8,16 +8,21 @@ function Cart(props) {
       {[{ id: "c1", name: "Sushi", amount: 2, price: 12.99 }].map((item) => (
         <li>
           {item.name}
-          <li>{item.amount}</li>
-          <li>{item.price}</li>
+          <li>
+            {" "}
+            {item.price} {`x${item.amount}`}
+          </li>
         </li>
       ))}
+      <hr></hr>
       {[{ id: "c2", name: "Schnitzel", amount: 1, price: 16.99 }].map(
         (item) => (
           <li>
             {item.name}
-            <li>{item.amount}</li>
-            <li>{item.price}</li>
+            <li>
+              {" "}
+              {item.price} {`x${item.amount}`}
+            </li>
           </li>
         )
       )}
