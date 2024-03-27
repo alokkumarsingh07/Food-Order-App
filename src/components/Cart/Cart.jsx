@@ -6,8 +6,21 @@ function Cart(props) {
   const cartItems = (
     <ul className={styles["cart-items"]}>
       {[{ id: "c1", name: "Sushi", amount: 2, price: 12.99 }].map((item) => (
-        <li>{item.name}</li>
+        <li>
+          {item.name}
+          <li>{item.amount}</li>
+          <li>{item.price}</li>
+        </li>
       ))}
+      {[{ id: "c2", name: "Schnitzel", amount: 1, price: 16.99 }].map(
+        (item) => (
+          <li>
+            {item.name}
+            <li>{item.amount}</li>
+            <li>{item.price}</li>
+          </li>
+        )
+      )}
     </ul>
   );
 
